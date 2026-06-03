@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINNING STAR | Smart Your Life</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .mega-menu {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            top: 100%;
+        }
+        .group:hover .mega-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-12">
+                <a href="index.html"><img src="LOGO.jpg" alt="WINNING STAR Logo" class="h-20"></a>
+                <div class="hidden md:flex space-x-8 font-semibold items-center">
+                    <a href="index.html" class="text-teal-600">Home</a>
+                    
+                    <!-- Products Mega Menu -->
+                    <div class="relative group py-4">
+                        <a href="products.html" class="hover:text-teal-600 transition flex items-center">
+                            Products <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div class="mega-menu absolute left-1/2 -translate-x-1/2 mt-0 w-[900px] bg-white shadow-2xl rounded-2xl p-8 border border-gray-100 z-50 grid grid-cols-4 gap-8">
+                            <div>
+                                <h4 class="font-bold text-teal-600 mb-4 border-b pb-2 uppercase text-sm tracking-wider">Kitchen Appliances</h4>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                    <li><a href="products.html#kitchen" class="hover:text-teal-600">Air Fryer</a></li>
+                                    <li><a href="products.html#kitchen" class="hover:text-teal-600">Blender & Mixer</a></li>
+                                    <li><a href="products.html#kitchen" class="hover:text-teal-600">Coffee Maker</a></li>
+                                    <li><a href="products.html#kitchen" class="hover:text-teal-600">Rice Cooker</a></li>
+                                    <li><a href="products.html#kitchen" class="hover:text-teal-600">Electric Kettle</a></li>
+                                    <li><a href="products.html#kitchen" class="hover:text-teal-600">Toaster Oven</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-teal-600 mb-4 border-b pb-2 uppercase text-sm tracking-wider">Home Appliances</h4>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                    <li><a href="products.html#home" class="hover:text-teal-600">Vacuum Cleaner</a></li>
+                                    <li><a href="products.html#home" class="hover:text-teal-600">Electric Fan</a></li>
+                                    <li><a href="products.html#home" class="hover:text-teal-600">Steam Iron</a></li>
+                                    <li><a href="products.html#home" class="hover:text-teal-600">Electric Heater</a></li>
+                                    <li><a href="products.html#home" class="hover:text-teal-600">Humidifier</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-teal-600 mb-4 border-b pb-2 uppercase text-sm tracking-wider">Personal Care</h4>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                    <li><a href="products.html#personal" class="hover:text-teal-600">Hair Dryer</a></li>
+                                    <li><a href="products.html#personal" class="hover:text-teal-600">Electric Shaver</a></li>
+                                    <li><a href="products.html#personal" class="hover:text-teal-600">Hair Straightener</a></li>
+                                    <li><a href="products.html#personal" class="hover:text-teal-600">Hair Clipper</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-teal-600 mb-4 border-b pb-2 uppercase text-sm tracking-wider">Kitchenware</h4>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                    <li><a href="products.html#kitchenware" class="hover:text-teal-600">Cookware Set</a></li>
+                                    <li><a href="products.html#kitchenware" class="hover:text-teal-600">Granite Pan</a></li>
+                                    <li><a href="products.html#kitchenware" class="hover:text-teal-600">Knife Set</a></li>
+                                    <li><a href="products.html#kitchenware" class="hover:text-teal-600">Kitchen Tools</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative group">
+                        <a href="about.html" class="hover:text-teal-600 transition flex items-center py-2">
+                            About Us <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div class="absolute left-0 mt-0 w-64 bg-white shadow-2xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 py-3 border border-gray-100">
+                            <a href="about.html#milestones" class="block px-6 py-3 hover:bg-teal-50 hover:text-teal-600 transition border-b border-gray-50">Company Milestones</a>
+                            <a href="about.html#presence" class="block px-6 py-3 hover:bg-teal-50 hover:text-teal-600 transition border-b border-gray-50">Global Brand Presence</a>
+                            <a href="about.html#exhibitions" class="block px-6 py-3 hover:bg-teal-50 hover:text-teal-600 transition border-b border-gray-50">Exhibitions & Events</a>
+                            <a href="about.html#certification" class="block px-6 py-3 hover:bg-teal-50 hover:text-teal-600 transition border-b border-gray-50">Quality & Certification</a>
+                            <a href="about.html#news" class="block px-6 py-3 hover:bg-teal-50 hover:text-teal-600 transition">WINNING NEWS</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="hover:text-teal-600 transition">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-6">
+                <!-- Language Switcher -->
+                <div class="relative group">
+                    <button class="flex items-center space-x-2 text-gray-700 hover:text-teal-600 font-semibold transition">
+                        <i class="fas fa-globe"></i> <span>EN</span> <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="absolute right-0 mt-2 w-40 bg-white shadow-2xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 py-2 border border-gray-100">
+                        <a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">English (EN)</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">Français (FR)</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">Español (ES)</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">Italiano (IT)</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">العربية (AR)</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">Русский (RU)</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">Deutsch (DE)</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">Português (PT)</a>
+                    </div>
+                </div>
+                <button class="md:hidden text-2xl text-teal-600"><i class="fas fa-bars"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[80vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30 z-10"></div>
+        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1920" class="absolute inset-0 w-full h-full object-cover animate-pulse" style="animation-duration: 8s" alt="Hero Background">
+        
+        <div class="relative z-20 text-center text-white px-6 max-w-4xl">
+            <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tighter">WINNING STAR</h1>
+            <p class="text-2xl md:text-3xl font-light mb-10 tracking-widest text-teal-400">SMART YOUR LIFE</p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+                <a href="products.html" class="bg-teal-600 hover:bg-teal-700 text-white px-10 py-4 rounded-full font-bold text-lg transition shadow-2xl hover:scale-105">View Collection</a>
+                <a href="contact.html" class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-10 py-4 rounded-full font-bold text-lg transition hover:scale-105">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-24 container mx-auto px-6">
+        <div class="flex justify-between items-end mb-16">
+            <div>
+                <h2 class="text-4xl font-bold mb-4">Explore Categories</h2>
+                <div class="h-1.5 w-24 bg-teal-600 rounded-full"></div>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Kitchen -->
+            <div class="group cursor-pointer">
+                <div class="relative h-[450px] rounded-3xl overflow-hidden shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 p-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">Kitchen Appliances</h3>
+                        <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500">Upgrade your cooking experience with smart tech.</p>
+                        <a href="products.html#kitchen" class="mt-4 inline-block text-teal-400 font-bold hover:underline">Shop Now →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Home -->
+            <div class="group cursor-pointer">
+                <div class="relative h-[450px] rounded-3xl overflow-hidden shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 p-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">Home Appliances</h3>
+                        <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500">Perfect solutions for a modern comfortable home.</p>
+                        <a href="products.html#home" class="mt-4 inline-block text-teal-400 font-bold hover:underline">Shop Now →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personal Care -->
+            <div class="group cursor-pointer">
+                <div class="relative h-[450px] rounded-3xl overflow-hidden shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?auto=format&fit=crop&w=800" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 p-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">Personal Care</h3>
+                        <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500">Your daily beauty and grooming essentials.</p>
+                        <a href="products.html#personal" class="mt-4 inline-block text-teal-400 font-bold hover:underline">Shop Now →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kitchenware -->
+            <div class="group cursor-pointer">
+                <div class="relative h-[450px] rounded-3xl overflow-hidden shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1584346133934-a3afd2a33c4c?auto=format&fit=crop&w=800" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-0 p-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">Kitchenware</h3>
+                        <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500">High quality tools for every kitchen task.</p>
+                        <a href="products.html#kitchenware" class="mt-4 inline-block text-teal-400 font-bold hover:underline">Shop Now →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-24 bg-gray-900 text-white overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-teal-600/10 blur-[100px] rounded-full -mr-48 -mt-48"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+                <div>
+                    <span class="text-5xl md:text-6xl font-black text-teal-500 block mb-2" data-target="20">0</span>
+                    <p class="text-gray-400 uppercase tracking-widest text-sm">Years Experience</p>
+                </div>
+                <div>
+                    <span class="text-5xl md:text-6xl font-black text-teal-500 block mb-2" data-target="100">0</span>
+                    <p class="text-gray-400 uppercase tracking-widest text-sm">Countries Served</p>
+                </div>
+                <div>
+                    <span class="text-5xl md:text-6xl font-black text-teal-500 block mb-2" data-target="2000">0</span>
+                    <p class="text-gray-400 uppercase tracking-widest text-sm">SKU Products</p>
+                </div>
+                <div>
+                    <span class="text-5xl md:text-6xl font-black text-teal-500 block mb-2" data-target="500">0</span>
+                    <p class="text-gray-400 uppercase tracking-widest text-sm">Global Partners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Network Section -->
+    <section class="py-24 container mx-auto px-6">
+        <div class="bg-white rounded-[3rem] p-12 md:p-20 shadow-2xl relative overflow-hidden border border-gray-50">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/2">
+                    <h2 class="text-5xl font-bold mb-8 leading-tight">Global Distribution <span class="text-teal-600">Network</span></h2>
+                    <p class="text-gray-600 text-lg mb-10 leading-relaxed">
+                        With major offices in <span class="font-bold">Dubai, Yiwu, and Guangzhou</span>, we connect high-quality smart appliances to over 100 countries across Africa, Middle East, and Europe.
+                    </p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3 font-semibold text-gray-700">
+                            <i class="fas fa-check-circle text-teal-500"></i> Local Warehouse Support
+                        </li>
+                        <li class="flex items-center gap-3 font-semibold text-gray-700">
+                            <i class="fas fa-check-circle text-teal-500"></i> Fast Global Logistics
+                        </li>
+                        <li class="flex items-center gap-3 font-semibold text-gray-700">
+                            <i class="fas fa-check-circle text-teal-500"></i> 24/7 Business Support
+                        </li>
+                    </ul>
+                    <a href="about.html" class="inline-block bg-teal-600 text-white px-12 py-5 rounded-2xl font-bold hover:bg-teal-700 transition transform hover:-translate-y-1">Learn More About Us</a>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1000" class="rounded-3xl shadow-2xl" alt="Global Network">
+                    <div class="absolute -bottom-10 -left-10 bg-white p-8 rounded-3xl shadow-2xl border border-gray-100 hidden md:block">
+                        <div class="flex items-center gap-4">
+                            <div class="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center text-teal-600 text-3xl">
+                                <i class="fas fa-globe-africa"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-2xl">100+</h4>
+                                <p class="text-gray-500 text-sm">Countries Active</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-20 text-center">
+        <div class="container mx-auto px-6">
+            <img src="LOGO.jpg" alt="Footer Logo" class="h-16 mx-auto mb-10 brightness-200">
+            <p class="text-gray-400 mb-4">&copy; 2026 WINNING STAR. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-6 text-gray-500 text-sm">
+                <a href="index.html" class="hover:text-white">Home</a>
+                <a href="products.html" class="hover:text-white">Products</a>
+                <a href="about.html" class="hover:text-white">About Us</a>
+                <a href="contact.html" class="hover:text-white">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const counters = document.querySelectorAll('[data-target]');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    const counter = entry.target;
+                    const target = +counter.getAttribute('data-target');
+                    let count = 0;
+                    const increment = target / 100;
+                    const update = () => {
+                        count += increment;
+                        if(count < target) {
+                            counter.innerText = Math.ceil(count);
+                            setTimeout(update, 20);
+                        } else {
+                            counter.innerText = target + '+';
+                        }
+                    };
+                    update();
+                    observer.unobserve(counter);
+                }
+            });
+        }, { threshold: 0.5 });
+        counters.forEach(c => observer.observe(c));
+    </script>
+</body>
+</html>
