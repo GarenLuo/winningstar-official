@@ -16,11 +16,11 @@
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
-    <!-- Lightbox Overlay -->
-    <div id="lightbox" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-[40] items-center justify-center p-12 cursor-pointer" onclick="toggleLightbox()">
-        <div class="relative flex flex-col items-center">
-            <img id="lightbox-img" src="" class="w-[800px] max-w-[90vw] object-contain shadow-2xl rounded-[2rem] bg-white p-8 border-8 border-gray-100/50">
-            <div class="mt-8 bg-black/50 text-white px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] backdrop-blur-md">Click anywhere to close</div>
+    <!-- Lightbox Overlay (Improved: Covers all but respects visual space) -->
+    <div id="lightbox" class="hidden fixed inset-0 bg-black/80 backdrop-blur-md z-[100] items-center justify-center p-12 cursor-pointer" onclick="toggleLightbox()">
+        <div class="relative flex flex-col items-center max-w-[80%] max-h-[85vh]">
+            <img id="lightbox-img" src="" class="w-full h-full object-contain shadow-2xl rounded-[2rem] bg-white p-8 border-8 border-white/10">
+            <div class="mt-8 bg-white/20 text-white px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] backdrop-blur-md border border-white/20">Click anywhere to close</div>
         </div>
     </div>
     <!-- Header (Consistent across all pages) -->
@@ -105,7 +105,7 @@
 
     <main class="container mx-auto px-6 py-12 flex gap-12">
         <!-- Sidebar Navigation (Bear Style) -->
-        <aside class="w-64 hidden lg:block shrink-0 relative z-[45] bg-gray-50">
+        <aside class="w-64 hidden lg:block shrink-0 bg-gray-50">
             <h3 class="text-lg font-bold mb-6 border-b pb-4 uppercase tracking-wider">Categories</h3>
             <div class="space-y-6">
                 <div>
