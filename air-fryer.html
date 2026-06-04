@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Fryers | WINNING STAR - Smart Kitchen Appliances</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .mega-menu { opacity: 0; visibility: hidden; transition: all 0.3s ease; top: 100%; left: 0; width: 100%; }
+        .group:hover .mega-menu { opacity: 1; visibility: visible; }
+        .sidebar-link.active { color: #0d9488; font-weight: bold; border-left: 4px solid #0d9488; padding-left: 12px; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header (Consistent across all pages) -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container relative mx-auto px-6 py-4 flex items-center">
+            <a href="index.html" class="flex-shrink-0 mr-12"><img src="LOGO.jpg" alt="WINNING STAR Logo" class="h-20"></a>
+            <div class="hidden md:flex space-x-8 font-semibold items-center">
+                <a href="index.html" class="hover:text-teal-600 transition">Home</a>
+                <div class="group py-4">
+                    <a href="products.html" class="text-teal-600 flex items-center">Products <i class="fas fa-chevron-down ml-1 text-xs"></i></a>
+                    <div class="mega-menu absolute left-0 w-full bg-white shadow-2xl rounded-2xl p-8 border border-gray-100 z-50 grid grid-cols-5 gap-6 text-left">
+                        <!-- Mega Menu Content (Copy from index.html) -->
+                        <div>
+                            <h4 class="font-bold text-teal-600 mb-4 border-b pb-2 uppercase text-[10px] tracking-wider">Kitchen Appliances</h4>
+                            <ul class="space-y-1 text-[11px] text-gray-600">
+                                <li><a href="air-fryer.html" class="hover:text-teal-600">Air Fryer</a></li>
+                                <li><a href="kettle.html" class="hover:text-teal-600">Electric Kettle</a></li>
+                                <li><a href="blender.html" class="hover:text-teal-600">Blender & Juicer</a></li>
+                            </ul>
+                        </div>
+                        <!-- ... other categories ... -->
+                    </div>
+                </div>
+                <a href="about.html" class="hover:text-teal-600 transition">About Us</a>
+                <a href="contact.html" class="hover:text-teal-600 transition">Contact Us</a>
+            </div>
+            <div class="ml-auto flex items-center gap-6">
+                <div class="relative group">
+                    <button class="flex items-center space-x-2 text-gray-700 hover:text-teal-600 font-semibold transition"><i class="fas fa-globe"></i> <span>EN</span></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-100 py-4 border-b">
+        <div class="container mx-auto px-6 text-xs text-gray-500">
+            <a href="index.html" class="hover:text-teal-600">Home</a> / 
+            <a href="products.html" class="hover:text-teal-600">Products</a> / 
+            <a href="products.html#kitchen" class="hover:text-teal-600">Kitchen Appliances</a> / 
+            <span class="text-teal-600 font-bold">Air Fryer</span>
+        </div>
+    </div>
+
+    <main class="container mx-auto px-6 py-12 flex gap-12">
+        <!-- Sidebar Navigation (Bear Style) -->
+        <aside class="w-64 hidden lg:block shrink-0">
+            <h3 class="text-lg font-bold mb-6 border-b pb-4 uppercase tracking-wider">Categories</h3>
+            <div class="space-y-6">
+                <div>
+                    <h4 class="text-sm font-bold text-gray-400 mb-3 uppercase tracking-widest">Kitchen</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="air-fryer.html" class="sidebar-link active block transition hover:text-teal-600">Air Fryer</a></li>
+                        <li><a href="kettle.html" class="sidebar-link block transition hover:text-teal-600">Electric Kettle</a></li>
+                        <li><a href="blender.html" class="sidebar-link block transition hover:text-teal-600">Blender & Juicer</a></li>
+                        <li><a href="products.html#kitchen" class="sidebar-link block transition hover:text-teal-600">Other Kitchen</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-gray-400 mb-3 uppercase tracking-widest">Home</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="vacuum.html" class="sidebar-link block transition hover:text-teal-600">Vacuum Cleaner</a></li>
+                        <li><a href="products.html#home" class="sidebar-link block transition hover:text-teal-600">View All Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <div class="flex-1">
+            <div class="flex items-center justify-between mb-10">
+                <h1 class="text-4xl font-bold">Air Fryers</h1>
+                <span class="text-gray-400 text-sm">8 Products Found</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 group">
+                    <div class="aspect-square bg-gray-50 relative overflow-hidden p-8">
+                        <img src="placeholder-airfryer-1.jpg" alt="ST-5912 Air Fryer" class="w-full h-full object-contain group-hover:scale-110 transition duration-700">
+                        <span class="absolute top-6 left-6 bg-orange-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Hot</span>
+                    </div>
+                    <div class="p-8 text-center">
+                        <p class="text-teal-600 text-[10px] font-bold uppercase tracking-widest mb-2">Model: ST-5912</p>
+                        <h3 class="font-bold text-xl mb-6 text-gray-800">5.5L Visual Digital Air Fryer</h3>
+                        <a href="contact.html?product=Air%20Fryer%20ST-5912" class="inline-block w-full py-4 rounded-xl bg-gray-900 text-white text-sm font-bold hover:bg-teal-600 transition-colors uppercase tracking-widest">Inquiry Now</a>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 group">
+                    <div class="aspect-square bg-gray-50 relative overflow-hidden p-8">
+                        <img src="placeholder-airfryer-2.jpg" alt="ST-5915 Air Fryer" class="w-full h-full object-contain group-hover:scale-110 transition duration-700">
+                        <span class="absolute top-6 left-6 bg-teal-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">New</span>
+                    </div>
+                    <div class="p-8 text-center">
+                        <p class="text-teal-600 text-[10px] font-bold uppercase tracking-widest mb-2">Model: ST-5915</p>
+                        <h3 class="font-bold text-xl mb-6 text-gray-800">8.0L Large Capacity Air Fryer</h3>
+                        <a href="contact.html?product=Air%20Fryer%20ST-5915" class="inline-block w-full py-4 rounded-xl bg-gray-900 text-white text-sm font-bold hover:bg-teal-600 transition-colors uppercase tracking-widest">Inquiry Now</a>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 (More can be added) -->
+            </div>
+
+            <!-- SEO Content Section (Bear Style) -->
+            <div class="mt-24 pt-16 border-t border-gray-100">
+                <h2 class="text-2xl font-bold mb-8">About WINNING STAR Air Fryers</h2>
+                <div class="prose max-w-none text-gray-600 leading-relaxed space-y-4 text-sm">
+                    <p>WINNING STAR air fryers utilize advanced 360&deg; rapid air circulation technology to provide healthy, oil-free cooking solutions for modern families. Our air fryers are designed for efficiency, durability, and ease of use.</p>
+                    <p>As a leading global B2B supplier of kitchen appliances, we provide comprehensive OEM/ODM solutions and wholesale distribution for retailers in the Middle East, Africa, and Southeast Asia. All our air fryers are CE and CB certified, ensuring compliance with international quality standards.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-20 text-center border-t border-gray-800">
+        <!-- ... footer content ... -->
+    </footer>
+</body>
+</html>
