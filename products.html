@@ -7,104 +7,96 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .mega-menu {
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            top: 100%;
-        }
-        .group:hover .mega-menu {
-            opacity: 1;
-            visibility: visible;
-        }
+        .mega-menu { opacity: 0; visibility: hidden; transition: all 0.3s ease; top: 100%; left: 0; width: 100%; }
+        .group:hover .mega-menu { opacity: 1; visibility: visible; }
+        .scroll-mt { scroll-margin-top: 120px; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex  items-center">
-            <a href="index.html"><img src="LOGO.jpg" alt="WINNING STAR Logo" class="h-20"></a>
-                <div class="hidden md:flex ml-12 space-x-8 font-semibold items-center">
-                    <a href="index.html" class="hover:text-teal-600 transition">Home</a>
-                    
-                    <!-- Products Mega Menu -->
-                    <div class="relative group py-4">
-                        <a href="products.html" class="text-teal-600 transition flex items-center">
-                            Products <i class="fas fa-chevron-down ml-1 text-xs"></i>
-                        </a>
-                        <div class="mega-menu absolute left-1/2 -translate-x-1/2 mt-0 w-[900px] bg-white shadow-2xl rounded-2xl p-8 border border-gray-100 z-50 grid grid-cols-4 gap-8">
-                            <div>
-                                <h4 class="font-bold text-teal-600 mb-4 border-b pb-2 uppercase text-sm tracking-wider">Kitchen Appliances</h4>
-                                <ul class="space-y-2 text-sm text-gray-600">
-                                    <li><a href="products.html#kitchen" class="hover:text-teal-600">Air Fryer</a></li>
-                                    <li><a href="products.html#kitchen" class="hover:text-teal-600">Blender & Mixer</a></li>
-                                    <li><a href="products.html#kitchen" class="hover:text-teal-600">Coffee Maker</a></li>
-                                    <li><a href="products.html#kitchen" class="hover:text-teal-600">Rice Cooker</a></li>
-                                    <li><a href="products.html#kitchen" class="hover:text-teal-600">Electric Kettle</a></li>
-                                    <li><a href="products.html#kitchen" class="hover:text-teal-600">Toaster Oven</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-teal-600 mb-4 border-b pb-2 uppercase text-sm tracking-wider">Home Appliances</h4>
-                                <ul class="space-y-2 text-sm text-gray-600">
-                                    <li><a href="products.html#home" class="hover:text-teal-600">Vacuum Cleaner</a></li>
-                                    <li><a href="products.html#home" class="hover:text-teal-600">Electric Fan</a></li>
-                                    <li><a href="products.html#home" class="hover:text-teal-600">Steam Iron</a></li>
-                                    <li><a href="products.html#home" class="hover:text-teal-600">Electric Heater</a></li>
-                                    <li><a href="products.html#home" class="hover:text-teal-600">Humidifier</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-teal-600 mb-4 border-b pb-2 uppercase text-sm tracking-wider">Personal Care</h4>
-                                <ul class="space-y-2 text-sm text-gray-600">
-                                    <li><a href="products.html#personal" class="hover:text-teal-600">Hair Dryer</a></li>
-                                    <li><a href="products.html#personal" class="hover:text-teal-600">Electric Shaver</a></li>
-                                    <li><a href="products.html#personal" class="hover:text-teal-600">Hair Straightener</a></li>
-                                    <li><a href="products.html#personal" class="hover:text-teal-600">Hair Clipper</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-teal-600 mb-4 border-b pb-2 uppercase text-sm tracking-wider">Kitchenware</h4>
-                                <ul class="space-y-2 text-sm text-gray-600">
-                                    <li><a href="products.html#kitchenware" class="hover:text-teal-600">Cookware Set</a></li>
-                                    <li><a href="products.html#kitchenware" class="hover:text-teal-600">Granite Pan</a></li>
-                                    <li><a href="products.html#kitchenware" class="hover:text-teal-600">Knife Set</a></li>
-                                    <li><a href="products.html#kitchenware" class="hover:text-teal-600">Kitchen Tools</a></li>
-                                </ul>
-                            </div>
+        <nav class="container relative mx-auto px-6 py-4 flex items-center">
+            <a href="index.html" class="flex-shrink-0 mr-12"><img src="LOGO.jpg" alt="WINNING STAR Logo" class="h-20"></a>
+            <div class="hidden md:flex space-x-8 font-semibold items-center">
+                <a href="index.html" class="hover:text-teal-600 transition">Home</a>
+                <div class="group py-4">
+                    <a href="products.html" class="text-teal-600 flex items-center">Products <i class="fas fa-chevron-down ml-1 text-xs"></i></a>
+                    <div class="mega-menu absolute bg-white shadow-2xl rounded-2xl p-8 border border-gray-100 z-50 grid grid-cols-5 gap-6">
+                        <div>
+                            <h4 class="font-bold text-teal-600 mb-4 border-b pb-2 uppercase text-[10px] tracking-wider">Kitchen Appliances</h4>
+                            <ul class="space-y-1 text-[11px] text-gray-600">
+                                <li><a href="products.html#kitchen" class="hover:text-teal-600">Juicer & Blender</a></li>
+                                <li><a href="products.html#kitchen" class="hover:text-teal-600">Break-wall machine</a></li>
+                                <li><a href="products.html#kitchen" class="hover:text-teal-600">Meat grinder</a></li>
+                                <li><a href="products.html#kitchen" class="hover:text-teal-600">Coffee machine</a></li>
+                                <li><a href="products.html#kitchen" class="hover:text-teal-600">Chef machine</a></li>
+                                <li><a href="products.html#kitchen" class="hover:text-teal-600">Air fryer</a></li>
+                                <li><a href="products.html#kitchen" class="hover:text-teal-600">Electric hot pot</a></li>
+                                <li><a href="products.html#kitchen" class="hover:text-teal-600">Electric kettle</a></li>
+                                <li><a href="products.html#kitchen" class="hover:text-teal-600">Rice cooker</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-teal-600 mb-4 border-b pb-2 uppercase text-[10px] tracking-wider">Home Appliances</h4>
+                            <ul class="space-y-1 text-[11px] text-gray-600">
+                                <li><a href="products.html#home" class="hover:text-teal-600">Socket & Fan</a></li>
+                                <li><a href="products.html#home" class="hover:text-teal-600">Vacuum cleaner</a></li>
+                                <li><a href="products.html#home" class="hover:text-teal-600">Electric iron</a></li>
+                                <li><a href="products.html#home" class="hover:text-teal-600">Hanging ironing machine</a></li>
+                                <li><a href="products.html#home" class="hover:text-teal-600">Electric heater</a></li>
+                                <li><a href="products.html#home" class="hover:text-teal-600">Refrigerator & Freezer</a></li>
+                                <li><a href="products.html#home" class="hover:text-teal-600">Washing machine</a></li>
+                                <li><a href="products.html#home" class="hover:text-teal-600">Air conditioner</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-teal-600 mb-4 border-b pb-2 uppercase text-[10px] tracking-wider">Personal Care</h4>
+                            <ul class="space-y-1 text-[11px] text-gray-600">
+                                <li><a href="products.html#personal" class="hover:text-teal-600">Hair clipper</a></li>
+                                <li><a href="products.html#personal" class="hover:text-teal-600">Shaver</a></li>
+                                <li><a href="products.html#personal" class="hover:text-teal-600">Curling iron</a></li>
+                                <li><a href="products.html#personal" class="hover:text-teal-600">Hair dryer</a></li>
+                                <li><a href="products.html#personal" class="hover:text-teal-600">Electric toothbrush</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-teal-600 mb-4 border-b pb-2 uppercase text-[10px] tracking-wider">Kitchenware</h4>
+                            <ul class="space-y-1 text-[11px] text-gray-600">
+                                <li><a href="products.html#kitchenware" class="hover:text-teal-600">Non-stick frying pan</a></li>
+                                <li><a href="products.html#kitchenware" class="hover:text-teal-600">Cookware set</a></li>
+                                <li><a href="products.html#kitchenware" class="hover:text-teal-600">Knives & Cutlery</a></li>
+                                <li><a href="products.html#kitchenware" class="hover:text-teal-600">Kitchenware</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-teal-600 mb-4 border-b pb-2 uppercase text-[10px] tracking-wider">Others</h4>
+                            <ul class="space-y-1 text-[11px] text-gray-600">
+                                <li><a href="products.html#others" class="hover:text-teal-600">Voltage stabilizer</a></li>
+                                <li><a href="products.html#others" class="hover:text-teal-600">Massager</a></li>
+                                <li><a href="products.html#others" class="hover:text-teal-600">Digital scale</a></li>
+                                <li><a href="products.html#others" class="hover:text-teal-600">Bluetooth earphones</a></li>
+                                <li><a href="products.html#others" class="hover:text-teal-600">Smart watch & Glasses</a></li>
+                                <li><a href="products.html#others" class="hover:text-teal-600">Power Bank & Speaker</a></li>
+                            </ul>
                         </div>
                     </div>
-
-                    <div class="relative group">
-                        <a href="about.html" class="hover:text-teal-600 transition flex items-center py-2">
-                            About Us <i class="fas fa-chevron-down ml-1 text-xs"></i>
-                        </a>
-                        <div class="absolute left-0 mt-0 w-64 bg-white shadow-2xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 py-3 border border-gray-100">
-                            <a href="about.html#milestones" class="block px-6 py-3 hover:bg-teal-50 hover:text-teal-600 transition border-b border-gray-50">Company Milestones</a>
-                            <a href="about.html#presence" class="block px-6 py-3 hover:bg-teal-50 hover:text-teal-600 transition border-b border-gray-50">Global Brand Presence</a>
-                            <a href="about.html#exhibitions" class="block px-6 py-3 hover:bg-teal-50 hover:text-teal-600 transition border-b border-gray-50">Exhibitions & Events</a>
-                            <a href="about.html#certification" class="block px-6 py-3 hover:bg-teal-50 hover:text-teal-600 transition border-b border-gray-50">Quality & Certification</a>
-                            <a href="about.html#news" class="block px-6 py-3 hover:bg-teal-50 hover:text-teal-600 transition">WINNING NEWS</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="hover:text-teal-600 transition">Contact Us</a>
                 </div>
-            </div>
-
-            <div class="flex items-center gap-6 ml-auto">
-                <!-- Language Switcher -->
                 <div class="relative group">
-                    <button class="flex items-center space-x-2 text-gray-700 hover:text-teal-600 font-semibold transition">
-                        <i class="fas fa-globe"></i> <span>EN</span> <i class="fas fa-chevron-down text-xs"></i>
-                    </button>
+                    <a href="about.html" class="hover:text-teal-600 transition flex items-center py-2">About Us <i class="fas fa-chevron-down ml-1 text-xs"></i></a>
+                    <div class="absolute left-0 mt-0 w-64 bg-white shadow-2xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 py-3 border border-gray-100">
+                        <a href="about.html#milestones" class="block px-6 py-3 hover:bg-teal-50 hover:text-teal-600 transition border-b border-gray-50">Company Milestones</a>
+                        <a href="about.html#presence" class="block px-6 py-3 hover:bg-teal-50 hover:text-teal-600 transition border-b border-gray-50">Global Brand Presence</a>
+                        <a href="about.html#exhibitions" class="block px-6 py-3 hover:bg-teal-50 hover:text-teal-600 transition border-b border-gray-50">Exhibitions & Events</a>
+                        <a href="about.html#certification" class="block px-6 py-3 hover:bg-teal-50 hover:text-teal-600 transition border-b border-gray-50">Quality & Certification</a>
+                        <a href="about.html#news" class="block px-6 py-3 hover:bg-teal-50 hover:text-teal-600 transition">WINNING NEWS</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="hover:text-teal-600 transition">Contact Us</a>
+            </div>
+            <div class="ml-auto flex items-center gap-6">
+                <div class="relative group">
+                    <button class="flex items-center space-x-2 text-gray-700 hover:text-teal-600 font-semibold transition"><i class="fas fa-globe"></i> <span>EN</span> <i class="fas fa-chevron-down text-xs"></i></button>
                     <div class="absolute right-0 mt-2 w-40 bg-white shadow-2xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 py-2 border border-gray-100">
-                        <a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">English (EN)</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">Français (FR)</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">Español (ES)</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">Italiano (IT)</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">العربية (AR)</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">Русский (RU)</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">Deutsch (DE)</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">Português (PT)</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">English (EN)</a><a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">Français (FR)</a><a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">Español (ES)</a><a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">Italiano (IT)</a><a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">العربية (AR)</a><a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">Русский (RU)</a><a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">Deutsch (DE)</a><a href="#" class="block px-4 py-2 hover:bg-teal-50 hover:text-teal-600">Português (PT)</a>
                     </div>
                 </div>
                 <button class="md:hidden text-2xl text-teal-600"><i class="fas fa-bars"></i></button>
@@ -112,71 +104,117 @@
         </nav>
     </header>
 
-    <section class="py-12 bg-teal-600 text-white text-center">
-        <h1 class="text-4xl font-bold">Our Product Categories</h1>
-        <p class="mt-4 text-lg">Explore our wide range of high-quality appliances.</p>
+    <section class="py-16 bg-teal-600 text-white text-center">
+        <h1 class="text-5xl font-bold uppercase tracking-widest">Our Products</h1>
+        <p class="mt-4 text-xl font-light">Explore our comprehensive range of smart appliances.</p>
     </section>
-    <section class="py-16 container mx-auto px-6">
-        <div class="space-y-24 text-center">
-            <div id="kitchen" class="scroll-mt-32">
-                <h2 class="text-3xl font-bold mb-12 flex items-center justify-center">
-                    <span class="w-12 h-1 bg-teal-600 mr-4"></span> Kitchen Appliances <span class="w-12 h-1 bg-teal-600 ml-4"></span>
-                </h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
-                        <div class="h-64 bg-gray-200 overflow-hidden"><img src="吸尘器ST-5032.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Product"></div>
-                        <div class="p-6 text-left"><h3 class="font-bold text-xl mb-2">High-Power Blender</h3><p class="text-gray-600 text-sm">Perfect for smoothies and professional kitchen use.</p></div>
-                    </div>
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
-                        <div class="h-64 bg-gray-200 overflow-hidden"><img src="cat-kitchen-bg.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Product"></div>
-                        <div class="p-6 text-left"><h3 class="font-bold text-xl mb-2">Air Fryer</h3><p class="text-gray-600 text-sm">Healthier cooking with rapid air circulation technology.</p></div>
-                    </div>
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
-                        <div class="h-64 bg-gray-200 overflow-hidden"><img src="店面形象 (4).jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Product"></div>
-                        <div class="p-6 text-left"><h3 class="font-bold text-xl mb-2">Electric Kettle</h3><p class="text-gray-600 text-sm">Fast boiling and sleek stainless steel design.</p></div>
-                    </div>
+
+    <section class="py-24 container mx-auto px-6">
+        <div class="space-y-32">
+            <!-- Kitchen Appliances -->
+            <div id="kitchen" class="scroll-mt pt-20 border-t border-gray-100">
+                <h2 class="text-4xl font-bold mb-12 flex items-center"><span class="w-12 h-1.5 bg-teal-600 mr-6"></span>Kitchen Appliances</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Juicer</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Blender</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Break-wall machine</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Meat grinder</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Coffee machine</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Chef machine</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Egg beater</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Oven</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Air fryer</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Egg cooker</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Electric grill</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Electric hot pot</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Gas stove</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Induction cooker</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Electric kettle</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Electric pressure cooker</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Rice cooker</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Electric steamer</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Electric frying pan</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Water dispenser</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Microwave oven</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Ice maker</div>
+                </div>
+            </div>
+
+            <!-- Home Appliances -->
+            <div id="home" class="scroll-mt pt-20 border-t border-gray-100">
+                <h2 class="text-4xl font-bold mb-12 flex items-center"><span class="w-12 h-1.5 bg-teal-600 mr-6"></span>Home Appliances</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Socket</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Fan</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Vacuum cleaner</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Sweeping machine</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Electric iron</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Hanging ironing machine</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Hair ball trimmer</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Coffee grinder</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Coffee machine</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Mosquito lamp</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Heater</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Electric heater</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Refrigerator</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Freezer</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Smart TV</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Washing machine</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Air conditioner</div>
+                </div>
+            </div>
+
+            <!-- Personal Care -->
+            <div id="personal" class="scroll-mt pt-20 border-t border-gray-100">
+                <h2 class="text-4xl font-bold mb-12 flex items-center"><span class="w-12 h-1.5 bg-teal-600 mr-6"></span>Personal Care</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Hair clipper</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Shaver</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Curling iron</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Hair straightener</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Hair dryer</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Electric toothbrush</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Water flosser</div>
+                </div>
+            </div>
+
+            <!-- Kitchenware -->
+            <div id="kitchenware" class="scroll-mt pt-20 border-t border-gray-100">
+                <h2 class="text-4xl font-bold mb-12 flex items-center"><span class="w-12 h-1.5 bg-teal-600 mr-6"></span>Kitchenware</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Non-stick frying pan</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Cookware set</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Knives</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Cutlery set</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Kitchenware</div>
+                </div>
+            </div>
+
+            <!-- Others -->
+            <div id="others" class="scroll-mt pt-20 border-t border-gray-100">
+                <h2 class="text-4xl font-bold mb-12 flex items-center"><span class="w-12 h-1.5 bg-teal-600 mr-6"></span>Others</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Voltage stabilizer</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Massager</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Digital scale</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Bluetooth earphones</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Smart watch</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Smart glasses</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Power Bank</div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-50 text-sm">Speaker</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-white py-20 text-center">
+    <footer class="bg-gray-900 text-white py-20 text-center border-t border-gray-800">
         <div class="container mx-auto px-6">
             <img src="LOGO.jpg" alt="Footer Logo" class="h-16 mx-auto mb-10 brightness-200">
             <p class="text-gray-400 mb-4">&copy; 2026 WINNING STAR. All Rights Reserved.</p>
             <div class="flex justify-center space-x-6 text-gray-500 text-sm">
-                <a href="index.html" class="hover:text-white">Home</a>
-                <a href="products.html" class="hover:text-white">Products</a>
-                <a href="about.html" class="hover:text-white">About Us</a>
-                <a href="contact.html" class="hover:text-white">Contact Us</a>
+                <a href="index.html" class="hover:text-white">Home</a><a href="products.html" class="hover:text-white">Products</a><a href="about.html" class="hover:text-white">About Us</a><a href="contact.html" class="hover:text-white">Contact Us</a>
             </div>
         </div>
     </footer>
-
-    <script>
-        const counters = document.querySelectorAll('[data-target]');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting) {
-                    const counter = entry.target;
-                    const target = +counter.getAttribute('data-target');
-                    let count = 0;
-                    const increment = target / 100;
-                    const update = () => {
-                        count += increment;
-                        if(count < target) {
-                            counter.innerText = Math.ceil(count);
-                            setTimeout(update, 20);
-                        } else {
-                            counter.innerText = target + '+';
-                        }
-                    };
-                    update();
-                    observer.unobserve(counter);
-                }
-            });
-        }, { threshold: 0.5 });
-        counters.forEach(c => observer.observe(c));
-    </script>
 </body>
 </html>
